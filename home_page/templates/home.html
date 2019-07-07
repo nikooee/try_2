@@ -1,0 +1,32 @@
+{% with site_title="try_2" %}
+
+<!DOCTYPE html>
+    <!DOCTYPE html>
+    {% load static %}
+    {% load jalali_tags %}
+    {% load i18n %}
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>home</title>
+
+</head>
+    <body class="font-vazir" style="direction: rtl; text-align: right">
+        {% include "include/navbar_frame.html" %}
+    <div class="font-vazir container mb-3 mt-3">
+        {% include "include/message_frame.html" %}
+        {% block content %}
+        {% endblock %}
+    </div>
+    </body>
+</html>
+
+{% endwith %}
